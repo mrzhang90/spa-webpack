@@ -1,0 +1,39 @@
+{
+  "name": "spa-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "lodash-es": "^4.17.11"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "set-iterm2-badge": "0.0.4",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-deep-scope-plugin": "^1.6.0",
+    "webpack-merge": "^4.1.4",
+    "yargs-parser": "^11.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrzhang90/spa-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrzhang90/spa-webpack/issues"
+  },
+  "homepage": "https://github.com/mrzhang90/spa-webpack#readme"
+}
