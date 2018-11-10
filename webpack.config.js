@@ -55,6 +55,28 @@ WebpackConfig={
           }
         ]
     },
+    optimization:{
+        // 生成common.bundles.js-
+            // 公共包
+        splitChunks:{
+            // 以前用commensChunks,现在用这个
+            cacheGroups:{
+                commons:{
+                    chunks:"initial",
+                    name:"common",
+                    minChunks:1,
+                    // 最大请求出
+                    maxInitialRequests:5,
+                    minSize:0
+                }
+            }
+        },
+        // 生成runtime.bundles.js-
+            // webpack运行时
+        runtimeChunk:{
+            name:"runtime"
+        }
+    },
     plugins: [
         // webpack tree-tracking增效，强力清楚没有引用的代码
         // new WebpackDeepScopeAnalysisPlugin(),

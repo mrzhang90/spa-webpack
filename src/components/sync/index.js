@@ -7,6 +7,12 @@ import item from "./sync.css";
 console.log('item.main::',item)
 const sync=function(){
     console.log('sync')
+    // 向webpack中创建的接口，请求数据
+    fetch("/api/test")
+    .then(res=>res.json())
+    .then(data=>{
+        console.log('fetch结果：：',data);
+    })
     // 通过css-loader 把css类名改成modules，就可以拿到item下的类
     document.querySelector('#app').innerHTML=`<h1 class="${item.test}">hello world</h1>`;
 }
